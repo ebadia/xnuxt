@@ -1,33 +1,44 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        xtremis
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div>
+    <Banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="https://s3-eu-west-1.amazonaws.com/ebp-myvue/medida-cap.png" color="$medida" />
+
+    <section>
+      <div class="row mt-5 mb-5 pt-5 pb-5">
+        <div class="offset-md-2 offset-1 col-10 offset-sm-1 col-sm-10 col-md-9">
+          <div class="col-md-4">
+            <XImage imagen="https://s3-eu-west-1.amazonaws.com/ebp-myvue/medida-1.png" text="Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas." color="$medida" />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section>
+      <div class="row mt-5 mb-5 pt-5 pb-5">
+        <div class="col-md-3 offset-md-1">
+          <XNumber number="01" title="Seguridad" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla." color="$medida" />
+        </div>
+      </div>
+    </section>
+
+    <Form headline="solicita información y asesoramiento sin compromiso" text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de sus necesidades?" imagen="https://s3-eu-west-1.amazonaws.com/ebp-myvue/medida-form%20copia%202.png" />
+
+  </div>
+
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Banner from '~/components/Banner'
+import Form from '~/components/Form'
+import XNumber from '~/components/XNumber'
+import XImage from '~/components/XImage'
 
 export default {
+
   components: {
-    AppLogo
+    Banner,
+    Form,
+    XNumber,
+    XImage
   }
 }
 </script>
@@ -42,7 +53,8 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;

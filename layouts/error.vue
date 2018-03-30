@@ -1,8 +1,6 @@
 <template>
   <div>
-    <Header />
-    <nuxt/>
-    <Footer />
+    <h1>Ha ocurrido un error inesperado.</h1>
   </div>
 </template>
 
@@ -17,3 +15,5 @@ export default {
   }
 }
 </script>
+
+
