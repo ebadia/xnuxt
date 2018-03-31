@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="x-number-list-number" :style="{ borderRightColor: `${color}`, color: `${color}` }">
-      <span>{{number}}&nbsp;</span>
+    <div class="x-number-list-number" :style="{ borderRightColor: `${color}` }">
+      <span :style="{ color: `${color}` }">{{number}}&nbsp;</span>
     </div>
     <div class="x-number-list-title">
       <p>{{title}}</p>
