@@ -1,5 +1,5 @@
 <template>
-  <section :style="{ backgroundImage: `url(${bgImg})` }" class="d-md-flex bg-secondary d-flex align-items-center x-banner" data-pgc-define="banner" data-pgc-define-name="banner-superior" data-pgc-edit="banner-bg-image" data-pgc-edit-bckimage>
+  <section :style="{ backgroundImage: `url(${bgImg})` }" class="d-md-flex bg-secondary d-flex align-items-center x-banner">
     <div class="row no-gutters" style="width: 100%;">
       <div class="offset-1 col-10 offset-md-2 col-md-6">
         <h1 class="banner-title">{{title}}</h1>
