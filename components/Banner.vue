@@ -1,9 +1,9 @@
 <template>
-  <section :style="{ backgroundImage: `url(${imagen})` }" class="d-md-flex bg-secondary d-flex align-items-center x-banner" data-pgc-define="banner" data-pgc-define-name="banner-superior" data-pgc-edit="banner-bg-image" data-pgc-edit-bckimage>
+  <section :style="{ backgroundImage: `url(${bgImg})` }" class="d-md-flex bg-secondary d-flex align-items-center x-banner" data-pgc-define="banner" data-pgc-define-name="banner-superior" data-pgc-edit="banner-bg-image" data-pgc-edit-bckimage>
     <div class="row no-gutters" style="width: 100%;">
       <div class="offset-1 col-10 offset-md-2 col-md-6">
         <h1 class="banner-title">{{title}}</h1>
-        <h3 class="banner-subtitle" :style="{color: `${color}`}">{{subtitle}}<br></h3>
+        <h3 class="banner-subtitle" :style="{color: `${color}`}" v-html="subtitle"></h3>
       </div>
     </div>
   </section>
@@ -13,14 +13,11 @@
 <script>
 export default {
   name: 'Footer',
-  // data() {
-  //   return {
-  //     title: '',
-  //     subtitle: '',
-  //     imagen: '',
-  //     color: ''
-  //   }
-  // },
+  data() {
+    return {
+        bgImg: require(`~/assets/img/${this.imagen}`)
+    }
+  },
   props: ['title', 'subtitle', 'imagen', 'color'],
   methods: {
   }

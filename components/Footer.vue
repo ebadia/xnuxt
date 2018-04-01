@@ -1,12 +1,12 @@
 <template>
   <footer class="pt-5 pb-5">
     <div class="row item">
-      <div class="offset-md-2 col-md-8">
-        <h1>&nbsp;Hola</h1>
+      <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-8">
+        <h1>Hola</h1>
       </div>
     </div>
     <div class="row item">
-      <div class="offset-md-2 col-md-1">
+      <div class="offset-lg-2 col-lg-1 offset-md-1 col-md-2">
         <p>
           <a href="#" class="footer-link">inicio</a>
         </p>
@@ -20,7 +20,7 @@
           <a href="#" class="footer-link">contacto</a>
         </p>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <p>
           <a href="a-medida.html" class="footer-link">desarrollo de software a medida</a>
         </p>
@@ -37,13 +37,13 @@
           <a href="#" class="footer-link">diseño gráfico</a>
         </p>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-2 col-md-2">
         <p class="footer-title">barcelona</p>
         <p class="footer-text">Avenida Diagonal 449, 4º<br>08036 - Barcelona<br>ES</p>
         <p class="footer-text">info@xtremis.com</p>
         <p class="footer-text">+34 93 363 50 93</p>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-2 col-md-2">
         <p class="footer-title">bilbao</p>
         <p class="footer-text">C/San Vicente nº 8 – 6ª <br>48001 - Bilbao - VIzcaya <br>ES</p>
         <p class="footer-text">info@xtremis.com</p>
@@ -51,29 +51,29 @@
       </div>
     </div>
     <div class="row">
-      <div class="offset-md-2 col-md-8">
+      <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
         <p class="text-center">
           <a href="#">
-            <img src="assets/img/facebook.png" alt="" class="ml-3">
+            <img src="~/assets/img/facebook.png" alt="" class="ml-3">
           </a>
           <a href="#">
-            <img src="assets/img/twitter.png" alt="" class="ml-3">
+            <img src="~/assets/img/twitter.png" alt="" class="ml-3">
           </a>
           <a href="#">
-            <img src="assets/img/instagram.png" alt="" class="ml-3">
+            <img src="~/assets/img/instagram.png" alt="" class="ml-3">
           </a>
         </p>
         <hr>
       </div>
     </div>
     <div class="row">
-      <div class="offset-md-2 col-md-3">
+      <div class="offset-lg-2 col-lg-3 offset-md-1 col-md-4">
         <p class="footer-title">@ xtremis 2018</p>
       </div>
-      <div class="col-md-2">
-        <p class="text-center"><img src="assets/img/logo-gris.png" width="120" height="auto" alt=""></p>
+      <div class="col-lg-2 col-md-2">
+        <p class="text-center"><img src="~/assets/img/logo-gris.png" width="120" height="auto" alt=""></p>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="text-right">
           <a href="#" class="footer-link">aviso legal</a>
           <a href="#" class="footer-link">política de cookies</a>

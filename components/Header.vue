@@ -1,8 +1,8 @@
 <template>
-  <header style="padding-left: 10%; padding-right: 10%;" class="x-navbar">
+  <header style="padding-left: 10%; padding-right: 10%;" class="x-navbar fixed-top">
     <b-navbar toggleable="md">
       <b-navbar-toggle target="navbarToggler-menu"></b-navbar-toggle>
-      <b-navbar-brand href="#"><img src="assets/img/xtremislogo-W.png" width="120" height="auto" alt=""></b-navbar-brand>
+      <b-navbar-brand href="#"><img src="~/assets/img/xtremislogo-W.png" width="120" height="auto" alt=""></b-navbar-brand>
       <b-collapse is-nav id="navbarToggler-menu">
         <b-navbar-nav class="ml-auto">
 

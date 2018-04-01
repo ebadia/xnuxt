@@ -29,7 +29,28 @@ export default {
   components: {
     XCard
   },
-  props: [ 'head', 'title', 'text', 'color', 'cards'],
+  props: {
+    head: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    text: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true
+    },
+    cards: {
+      type: Array,
+      required: true
+    },
+  },
   data () {
     return {
       cardData: this.cards,

@@ -96,17 +96,17 @@ footer {
   font-size: 11;
 }
 
-.header-link {
+.nav-link {
   display: block;
   font-variant: small-caps;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
-.header-link:hover {
+.nav-link:hover {
   display: block;
   background-color: #ffffff;
-  color: #000000;
+  color: #000000 !important;
 }
 
 .header-drop-link {
@@ -155,6 +155,10 @@ footer {
 
 li.nav-item.active {
   border-bottom: 4px solid white;
+}
+
+.navbar-toggler {
+  background-color: white;
 }
 
 .banner-subtitle {

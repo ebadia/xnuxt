@@ -1,7 +1,16 @@
 <template>
-  <section class="container">
-    <div>
-      <h1>This is web apps page</h1>
-    </div>
-  </section>
+  <div>
+      <Banner title="Desarrollo web" subtitle="UX<br/>SEO<br>Conversion" imagen="web-cap.png" color="#bbb53e" />
+  </div>
 </template>
+
+<script>
+import Banner from '~/components/Banner'
+
+export default {
+
+  components: {
+    Banner,
+  },
+}
+</script>
