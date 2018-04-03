@@ -49,12 +49,18 @@ h3 {
   .imagen-7-5 {
     display: none;
   }
+  .cuadro-blanco {
+    width: 90%;
+  }
 }
 
 @media (min-width: 767px) {
   .imagen-7-5 {
     height: 350px;
     padding: 0;
+  }
+  .cuadro-blanco {
+    width: 500px;
   }
 }
 
@@ -157,6 +163,10 @@ li.nav-item.active {
   border-bottom: 4px solid white;
 }
 
+a.nav-link.active {
+  border-bottom: 4px solid white;
+}
+
 .navbar-toggler {
   background-color: white;
 }
@@ -198,4 +208,12 @@ li.nav-item.active {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }

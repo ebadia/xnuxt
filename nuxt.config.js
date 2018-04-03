@@ -2,7 +2,7 @@ module.exports = {
   router: {
     base: '/xnuxt/'
   },
-
+  generate: {},
   /*
   ** Headers of the page
   */
@@ -38,8 +38,15 @@ module.exports = {
     }
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
+  plugins: [],
   modules: [
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth',
     ['nuxt-sass-resources-loader', '~/assets/styles/globals.scss']
-  ]
+  ],
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
+  }
 }

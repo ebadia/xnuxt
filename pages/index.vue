@@ -7,9 +7,13 @@
     </section>
 
     <section>
+      <XImageFour />
+    </section>
+
+    <!-- <section>
       <XCuadro imagen="pantalla.jpg" head="5 Soluciones de desarrollo de software a medida" title="Adapta el software a tu empresa, no tu empresa al software" text="              <p>En el mundo del software empresarial, una mala elección puede llevarte a perder muchísimo tiempo y dinero.</p><p>En cambio, un programa personalizado y a medida puede ayudarte a perfeccionar tus procesos y mejorar tu productividad a niveles como no habías imaginado.</p>
 " color="#bbb53e"  enlace="#" link="resolvemos tus dudas" />
-    </section>
+    </section> -->
 
     <!-- <section>
       <div class="row mt-5 mb-5 pt-5 pb-5">
@@ -36,6 +40,7 @@ import XNumber from '~/components/XNumber'
 import XCards from '~/components/XCards'
 import XImageLeft from '~/components/XImageLeft'
 import XCuadro from '~/components/XCuadro'
+import XImageFour from '~/components/XImageFour'
 
 export default {
 
@@ -45,7 +50,8 @@ export default {
     XNumber,
     XCards,
     XImageLeft,
-    XCuadro
+    XCuadro,
+    XImageFour
   },
 
   data () {

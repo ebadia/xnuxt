@@ -6,7 +6,7 @@
       <b-collapse is-nav id="navbarToggler-menu">
         <b-navbar-nav class="ml-auto">
 
-          <b-nav-item to="/" class="header-link">inicio</b-nav-item>
+          <b-nav-item to="/#" class="header-link">inicio</b-nav-item>
 
           <b-nav-item-dropdown id="dd-servicios" text="servicios" class="header-link">
             <b-dropdown-item class="dropdown-item header-drop-link" to="/custom">desarrollo de software a medida</b-dropdown-item>
