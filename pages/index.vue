@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <x-banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="medida-cap.png" color="#bbb53e" />
+      <x-banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="medida-cap.jpg" color="#bbb53e" />
     </section>
 
     <section>
@@ -13,7 +13,7 @@
     </section>
 
     <section>
-      <x-banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="medida-cap.png" color="#bbb53e" />
+      <x-banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="medida-cap.jpg" color="#bbb53e" />
     </section>
 
     <section>
@@ -29,7 +29,7 @@
     </section>
 
     <section>
-      <x-image-four :images="images" />
+      <x-image-four :images="images" color="#bbb53e"/>
     </section>
 
     <section>
@@ -37,7 +37,7 @@
     </section>
 
     <section>
-      <x-form headline="solicita información y asesoramiento sin compromiso" text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de sus necesidades?" imagen="medida-form.png" area="amedida" />
+      <x-form headline="solicita información y asesoramiento sin compromiso" text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de sus necesidades?" imagen="medida-form.jpg" area="amedida" />
     </section>
 
     <section>
@@ -185,25 +185,29 @@ export default {
           image: "pantalla.jpg",
           title: "Card title",
           subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group"
+          text: "This is the text in a card of four cards in the group",
+          color: "#bbb53e"
         },
         {
           image: "pantalla.jpg",
           title: "Card title",
           subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group"
+          text: "This is the text in a card of four cards in the group",
+          color: "#bbb53e"
         },
         {
           image: "pantalla.jpg",
           title: "Card title",
           subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group"
+          text: "This is the text in a card of four cards in the group",
+          color: "#bbb53e"
         },
         {
           image: "pantalla.jpg",
           title: "Card title",
           subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group"
+          text: "This is the text in a card of four cards in the group",
+          color: "#bbb53e"
         }
       ]
     };
