@@ -1,17 +1,14 @@
-// import Vuex from 'vuex'
-// import axios from 'axios'
+import Vuex from "vuex";
 
-// const createStore = () => {
-//   return new Vuex.Store({
-//     state: {},
-//     mutations: {},
-//     actions: {
-//       nuxtServerInit( nuxtContext, context) {
+const createStore = () => {
+	return new Vuex.Store({
+		state: {},
+		mutations: {},
+		actions: {
+			nuxtServerInit(nuxtContext, context) {}
+		},
+		getters: {}
+	});
+};
 
-//       }
-//     },
-//     getters: {},
-//   })
-// }
-
-// export default createStore
+export default createStore;
