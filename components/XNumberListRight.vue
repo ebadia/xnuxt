@@ -1,11 +1,11 @@
 <template>
   <div class="w-100 pt-5 pb-5" :style="{ 'background-image': `url(${bgImg})`,
       'background-repeat': 'no-repeat',
-      'background-position': 'right center',
-      'background-size': 'contain'}" style="display: flex; flex-direction: column; align-items: flex-start;">
+      'background-position': 'left center',
+      'background-size': 'contain'}" style="display: flex; flex-direction: column; align-items: flex-end;">
     <!-- <div>  -->
       <div class="row" style="width: 75%;">
-        <div class="col-lg-6 offset-lg-2">
+        <div class="col-8">
           <div class="p-1 ml-md-5 m-3">
             <h5 class="small-caps-text" style="color: #00bcd4;">{{header}}</h5>
             <h3 class="item">{{title}}</h3>
@@ -17,7 +17,7 @@
       </div>
 
       <div class="row" style="width: 75%;">
-        <div class="col-12 offset-lg-2">
+        <div class="col-12">
           <div class="row p-1 ml-md-5 m-3">
             <div class="col-md-4" v-for="(item, index) in list" :key="index">
               <XNumber :number="`0${index+1}`" :title="item.title" :text="item.text" :color="color"/>

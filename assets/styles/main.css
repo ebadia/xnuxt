@@ -52,6 +52,9 @@ h3 {
   .cuadro-blanco {
     width: 90%;
   }
+  .cta-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 767px) {
@@ -61,6 +64,9 @@ h3 {
   }
   .cuadro-blanco {
     width: 500px;
+  }
+  .cta-container {
+    width: 70%;
   }
 }
 

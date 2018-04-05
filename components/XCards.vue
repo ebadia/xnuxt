@@ -12,7 +12,7 @@
       <!-- cards -->
       <div class="row mt-5 mb-5">
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-11 col-11 pl-0 mt-5"
-          v-bind:key="index"
+          :key="index"
           v-for="(card, index) in cardData" 
         >
           <XCard :imagen="card.imagen" :text="card.texto" :color="card.color" />
