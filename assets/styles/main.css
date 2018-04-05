@@ -1,10 +1,13 @@
 /* :root {
   --medida: #bbb53e;
   --web: #59a2ac;
+  --apps: #FF5252;
+  --webapps: #5DA1AC;
+  --consulting: #DD3A85;
 } */
 
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.8;
@@ -55,6 +58,9 @@ h3 {
   .cta-container {
     width: 100%;
   }
+  .img-lr {
+    display: none;
+  }
 }
 
 @media (min-width: 767px) {
@@ -76,7 +82,17 @@ h3 {
 }
 
 .border-card {
-  min-height: 250px;
+  min-height: 300px;
+}
+
+.img-lr {
+  max-height: 200px;
+  width: auto;
+}
+
+.cta:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .item-formulario {

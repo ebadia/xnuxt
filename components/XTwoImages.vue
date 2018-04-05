@@ -10,11 +10,9 @@
 
     <div class="row no-gutters" style="width: 100%;
     margin-top: 40px;
-    margin-bottom: 40px;"> 
-      <div class="p-0 d-flex justify-content-end" style="overflow: hidden;
-    width: 100%;">
-        <img :src="bgImgL" class="imagen-7-5"> 
-        <img :src="bgImgR" class="imagen-7-5"> 
+    margin-bottom: 40px;">
+      <div class="p-0 d-flex justify-content-end" style="overflow: hidden; width: 100%;">
+        <img :src="bgImg" class="imagen-7-5">
       </div>         
     </div>     
     
@@ -29,48 +27,42 @@
 </template>
 
 <script>
-  import XTwoImagesFoot from '~/components/XTwoImagesFoot'
+import XTwoImagesFoot from "~/components/XTwoImagesFoot";
 
-  export default {
-    components: {
-      XTwoImagesFoot
+export default {
+  components: {
+    XTwoImagesFoot
+  },
+  props: {
+    title: {
+      type: String,
+      required: true
     },
-    props: {
-      title: {
-        type: String,
-        required: true
-      },
-      subt: {
-        type: String,
-        required: true
-      },
-      text: {
-        type: String,
-        required: true
-      },
-      color: {
-        type: String,
-        required: true
-      },
-      imageni: {
-        type: String,
-        required: true
-      },
-      imagend: {
-        type: String,
-        required: true
-      },
-      cards: {
-        type: Array,
-        required: true
-      },
+    subt: {
+      type: String,
+      required: true
     },
-    data () {
-      return {
-        bgImgL: require(`~/assets/img/${this.imageni}`),
-        bgImgR: require(`~/assets/img/${this.imagend}`)
-      }
+    text: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true
+    },
+    imagen: {
+      type: String,
+      required: true
+    },
+    cards: {
+      type: Array,
+      required: true
     }
+  },
+  data() {
+    return {
+      bgImg: require(`~/assets/img/${this.imagen}`)
+    };
   }
+};
 </script>
-

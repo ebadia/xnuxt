@@ -1,5 +1,5 @@
-<template>
-  <div class="d-flex pt-5 pb-5 clearfix" :style="{ backgroundImage: `url('${bgImg}')`, backgroundPosition: 'right center'}">
+∫ <template>
+  <div class="d-flex pt-5 pb-5 clearfix" :style="{ backgroundImage: `url('${bgImg}')`, backgroundPosition: 'left center'}">
     <div class="row w-100 pl-4">
       <div class="col-lg-2 d-none d-md-inline">
         &nbsp;
@@ -34,18 +34,15 @@
 </template>
 
 <script>
-  export default {
-    props: [
-      'headline', 'text', 'imagen', 'area'
-    ],
-    data () {
-      return {
-        bgImg: require(`~/assets/img/${this.imagen}`)
-      }
-    }
+export default {
+  props: ["headline", "text", "imagen", "area"],
+  data() {
+    return {
+      bgImg: require(`~/assets/img/${this.imagen}`)
+    };
   }
+};
 </script>
 
 <style scoped>
-
 </style>

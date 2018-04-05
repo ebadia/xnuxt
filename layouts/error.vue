@@ -5,15 +5,13 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
+import XHeader from "~/components/XHeader.vue";
+import XFooter from "~/components/XFooter.vue";
 
 export default {
-  components: {
-    Header,
-    Footer
-  }
-}
+	components: {
+		XHeader,
+		XFooter
+	}
+};
 </script>
-
-

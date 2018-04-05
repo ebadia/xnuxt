@@ -30,10 +30,10 @@
 </template>
 
 <script>
-import XNumber from '@/components/XNumber'
+import XNumber from "@/components/XNumber";
 
 export default {
-  name: 'x-number',
+  name: "x-number",
   components: {
     XNumber
   },
@@ -58,15 +58,18 @@ export default {
       type: String,
       required: true
     },
-  },
-  data () {
-    return {
-      bgImg: require('~/assets/img/web-ecommerce.png'),
+    imagen: {
+      type: String,
+      required: true
     }
+  },
+  data() {
+    return {
+      bgImg: require(`~/assets/img/${this.imagen}`)
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-
 </style>
