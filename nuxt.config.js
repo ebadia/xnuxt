@@ -2,7 +2,6 @@ module.exports = {
   router: {
     base: '/xnuxt/'
   },
-  generate: {},
   /*
   ** Headers of the page
   */
@@ -42,7 +41,6 @@ module.exports = {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    '@nuxtjs/auth',
     ['nuxt-sass-resources-loader', '~/assets/styles/globals.scss']
   ],
   transition: {

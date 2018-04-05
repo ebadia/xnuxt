@@ -64,7 +64,6 @@ export default {
     }
   },
   data() {
-    console.log(this.imagen);
     const imagen =
       this.imagen === undefined ? "" : require("~/assets/img/" + this.imagen);
     return {

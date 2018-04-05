@@ -4,6 +4,7 @@
       <x-banner title="Desarrollo de software a medida" subtitle="Creamos software a medida" imagen="medida-cap.jpg" color="#bbb53e" />
     </section>
 
+<!--
     <section>
       <x-cards head="5 Soluciones de desarrollo de software a medida" title="Adapta el software a tu empresa, no tu empresa al software" text="Software a medida, la solución más eficaz para cubrir las necesidades de tu negocio." color="#bbb53e" :cards="cards" />
     </section>
@@ -43,6 +44,7 @@
     <section>
       <x-cta :ctas="ctas"/>
     </section>
+-->
 
   </div>
 
@@ -50,170 +52,160 @@
 
 <script>
 import XBanner from "~/components/XBanner";
-import XForm from "~/components/XForm";
-import XNumber from "~/components/XNumber";
-import XCards from "~/components/XCards";
-import XImageLeft from "~/components/XImageLeft";
-import XCuadro from "~/components/XCuadro";
-import XTwoImages from "~/components/XTwoImages";
-import XImageFour from "~/components/XImageFour";
-import XNumberList from "~/components/XNumberList";
-import XNumberListRight from "~/components/XNumberListRight";
-import XCta from "~/components/XCta";
-import XList from "~/components/XList";
+// import XForm from "~/components/XForm";
+// import XNumber from "~/components/XNumber";
+// import XCards from "~/components/XCards";
+// import XImageLeft from "~/components/XImageLeft";
+// import XCuadro from "~/components/XCuadro";
+// import XTwoImages from "~/components/XTwoImages";
+// import XImageFour from "~/components/XImageFour";
+// import XNumberList from "~/components/XNumberList";
+// import XNumberListRight from "~/components/XNumberListRight";
+// import XCta from "~/components/XCta";
+// import XList from "~/components/XList";
 
 export default {
   components: {
     XBanner,
-    XForm,
-    XNumber,
-    XCards,
-    XImageLeft,
-    XCuadro,
-    XTwoImages,
-    XImageFour,
-    XNumberList,
-    XNumberListRight,
-    XCta,
-    XList
   },
 
   data() {
     return {
-      cards: [
-        {
-          imagen: "medida-1.png",
-          texto:
-            "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
-          color: "#bbb53e"
-        },
-        {
-          imagen: "medida-2.png",
-          texto:
-            "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
-          color: "#bbb53e"
-        },
-        {
-          imagen: "medida-3.png",
-          texto:
-            "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
-          color: "#bbb53e"
-        },
-        {
-          imagen: "medida-4.png",
-          texto:
-            "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
-          color: "#bbb53e"
-        },
-        {
-          imagen: "medida-5.png",
-          texto:
-            "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
-          color: "#bbb53e"
-        }
-      ],
-      twoImageCards: [
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        },
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        },
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        },
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        }
-      ],
-      list: [
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        },
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        },
-        {
-          title: "Diseño exclusivo y personalizado.",
-          text:
-            "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
-        }
-      ],
-      ctas: [
-        {
-          img: "pantalla.jpg",
-          url: "/custom"
-        },
-        {
-          img: "pantalla.jpg",
-          url: "/webapps"
-        },
-        {
-          img: "pantalla.jpg",
-          url: "/custom"
-        },
-        {
-          img: "pantalla.jpg",
-          url: "/webapps"
-        }
-      ],
-      lista: [
-        "Responsive",
-        "Intuitiva",
-        "Atractiva",
-        "Funcional",
-        "Integrada",
-        "Rápida",
-        "Front/Back-end profesionales",
-        "Fácil de visualizar en todo tipo de dispositivo",
-        "Estándares W3"
-      ],
-      images: [
-        {
-          image: "pantalla.jpg",
-          title: "Card title",
-          subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group",
-          color: "#bbb53e"
-        },
-        {
-          image: "pantalla.jpg",
-          title: "Card title",
-          subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group",
-          color: "#bbb53e"
-        },
-        {
-          image: "pantalla.jpg",
-          title: "Card title",
-          subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group",
-          color: "#bbb53e"
-        },
-        {
-          image: "pantalla.jpg",
-          title: "Card title",
-          subtitle: "Card subtitle",
-          text: "This is the text in a card of four cards in the group",
-          color: "#bbb53e"
-        }
-      ]
+  //     cards: [
+  //       {
+  //         imagen: "medida-1.png",
+  //         texto:
+  //           "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         imagen: "medida-2.png",
+  //         texto:
+  //           "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         imagen: "medida-3.png",
+  //         texto:
+  //           "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         imagen: "medida-4.png",
+  //         texto:
+  //           "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         imagen: "medida-5.png",
+  //         texto:
+  //           "Porque estás cansado de probar programas genéricos y enlatados que no te aportan soluciones concretas.",
+  //         color: "#bbb53e"
+  //       }
+  //     ],
+  //     twoImageCards: [
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       },
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       },
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       },
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       }
+  //     ],
+  //     list: [
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       },
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       },
+  //       {
+  //         title: "Diseño exclusivo y personalizado.",
+  //         text:
+  //           "A diferencia de los programas genéricos, el software a medida se adapta a las necesidades específicas de tu organización."
+  //       }
+  //     ],
+  //     ctas: [
+  //       {
+  //         img: "pantalla.jpg",
+  //         url: "/custom"
+  //       },
+  //       {
+  //         img: "pantalla.jpg",
+  //         url: "/webapps"
+  //       },
+  //       {
+  //         img: "pantalla.jpg",
+  //         url: "/custom"
+  //       },
+  //       {
+  //         img: "pantalla.jpg",
+  //         url: "/webapps"
+  //       }
+  //     ],
+  //     lista: [
+  //       "Responsive",
+  //       "Intuitiva",
+  //       "Atractiva",
+  //       "Funcional",
+  //       "Integrada",
+  //       "Rápida",
+  //       "Front/Back-end profesionales",
+  //       "Fácil de visualizar en todo tipo de dispositivo",
+  //       "Estándares W3"
+  //     ],
+  //     images: [
+  //       {
+  //         image: "pantalla.jpg",
+  //         title: "Card title",
+  //         subtitle: "Card subtitle",
+  //         text: "This is the text in a card of four cards in the group",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         image: "pantalla.jpg",
+  //         title: "Card title",
+  //         subtitle: "Card subtitle",
+  //         text: "This is the text in a card of four cards in the group",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         image: "pantalla.jpg",
+  //         title: "Card title",
+  //         subtitle: "Card subtitle",
+  //         text: "This is the text in a card of four cards in the group",
+  //         color: "#bbb53e"
+  //       },
+  //       {
+  //         image: "pantalla.jpg",
+  //         title: "Card title",
+  //         subtitle: "Card subtitle",
+  //         text: "This is the text in a card of four cards in the group",
+  //         color: "#bbb53e"
+  //       }
+  //     ]
     };
   }
-};
+}
 </script>
 
 <style>
+
 </style>
