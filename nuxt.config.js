@@ -10,9 +10,15 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { name: "description", content: "Desarrollo de software a medida, aplicaciones para teléfonos móviles, diseño de páginas web, e-business, B2B, consultoría de TI. En Barcelona y Bilbao" },
+      { name: "keywords", content: "custom software,web design,apps for mobile phones,web,programm development,IT applications,programms,java,html,css,angular,jasmine,ruby,flex,air,flash,mysql,oracle,db2" },
+      { name: "author", content: "Xtremis" },
+      { content: "authenticity_token", name: "csrf-param"  },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/vnd.microsoft.icon', href: '/favicon_xtremis-4bdbe28d8411c86797a05669a78e8a74.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700' }
+      ]
   },
   /*
   ** Customize the progress bar color
