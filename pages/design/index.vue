@@ -14,7 +14,7 @@ on y offline." text="Por eso no nos quedamos solamente en el diseño web y la pr
     </section>
 
     <section>
-      <x-two-images :cards="twoImageCards" title="Diseño gráfico Made in Barcelona para sitios web." subt="" text="Las imágenes forman una parte esencial de cada una de las páginas de tu web, ya estemos hablando de una tienda online, un blog o un sitio web corporativo." :color="color" imagen="design-2img.jpg"/>
+      <x-two-images :cards="twoImageCards" title="Diseño gráfico Made in Barcelona para sitios web." subt="Las imágenes forman una parte esencial de cada una de las páginas de tu web, ya estemos hablando de una tienda online, un blog o un sitio web corporativo." text="" :color="color" imagen="design-2img.jpg" bgImagen="design-2img-left.jpg"/>
     </section>
 
     <section>

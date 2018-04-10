@@ -5,7 +5,7 @@
 	  </section>
 
     <section>
-      <x-two-images :cards="twoImageCards" title="Llega más y mejor a tus clientes." subt="En un mundo interconectado y dominado por los smartphones, las aplicaciones móviles son la herramienta básica para que puedas llegar a tus clientes." text="Casi la mitad de los clientes piensan que usar un dispositivo móvil en la tienda mejoraría su experiencia. La mejor forma de hacerlo es mediante una app móvil propia." color="#FF5252" imagen="app-slice2.jpg" />
+      <x-two-images :cards="twoImageCards" title="Llega más y mejor a tus clientes." subt="En un mundo interconectado y dominado por los smartphones, las aplicaciones móviles son la herramienta básica para que puedas llegar a tus clientes." text="Casi la mitad de los clientes piensan que usar un dispositivo móvil en la tienda mejoraría su experiencia. La mejor forma de hacerlo es mediante una app móvil propia." color="#FF5252" imagen="app-slice2.jpg" bgImagen="app-2img-left.jpg" />
     </section>
 
 		<section>
@@ -34,7 +34,7 @@
 
     <section>
       <x-cta :ctas="ctas"/>
-    </section>    
+    </section>
 
 	</div>
 </template>

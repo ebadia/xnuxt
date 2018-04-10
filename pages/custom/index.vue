@@ -13,7 +13,7 @@
     </section>
 
     <section>
-      <x-two-images :cards="twoImageCards" title="Las ventajas del software a medida." subt="El software a medida ayuda a resolver problemas y optimizar las necesidades de software de nuestros clientes." text="Las organizaciones que ya han dado el paso han podido observar sus principales ventajas frente a los 'programas enlatados'." color="#bbb53e" imagen="medida-slice2.jpg" />
+      <x-two-images :cards="twoImageCards" title="Las ventajas del software a medida." subt="El software a medida ayuda a resolver problemas y optimizar las necesidades de software de nuestros clientes." text="Las organizaciones que ya han dado el paso han podido observar sus principales ventajas frente a los 'programas enlatados'." color="#bbb53e" imagen="medida-slice2.jpg" bgImagen="medida-2img-left.jpg"/>
     </section>
 
     <section>
@@ -22,7 +22,7 @@
 
     <section>
       <x-cta :ctas="ctas"/>
-    </section>    
+    </section>
 
 	</div>
 </template>
