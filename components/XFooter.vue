@@ -22,19 +22,19 @@
       </div>
       <div class="col-lg-3 col-md-4">
         <p>
-          <a href="a-medida.html" class="footer-link">desarrollo de software a medida</a>
+          <router-link to="/custom" class="footer-link">desarrollo de software a medida</router-link>
         </p>
         <p>
-          <a href="#" class="footer-link">desarrollo de aplicaciones</a>
+          <router-link to="/mobile" class="footer-link">desarrollo de aplicaciones</router-link>
         </p>
         <p>
-          <a href="desarrollo-web.html" class="footer-link">desarrollo web</a>
+          <router-link to="/webapps" class="footer-link">desarrollo web</router-link>
         </p>
         <p>
-          <a href="#" class="footer-link">consultoría informática</a>
+          <router-link to="/consulting" class="footer-link">consultoría informática</router-link>
         </p>
         <p>
-          <a href="#" class="footer-link">diseño gráfico</a>
+          <router-link to="/design" class="footer-link">diseño gráfico</router-link>
         </p>
       </div>
       <div class="col-lg-2 col-md-2">

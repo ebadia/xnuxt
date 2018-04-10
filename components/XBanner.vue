@@ -19,6 +19,7 @@ export default {
   props: ["title", "subtitle", "imagen", "color"],
   methods: {}
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

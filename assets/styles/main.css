@@ -82,7 +82,7 @@ h3 {
 }
 
 .border-card {
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .img-lr {
@@ -230,6 +230,14 @@ a.nav-link.active {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.x-city {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+
 }
 
 .fade-enter-active,

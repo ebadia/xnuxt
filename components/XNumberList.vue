@@ -7,12 +7,12 @@
       <div class="row" style="width: 75%;">
         <div class="col-lg-6 offset-lg-2">
           <div class="p-1 ml-md-5 m-3">
-            <h5 class="small-caps-text" style="color: #00bcd4;">{{header}}</h5>
+            <h5 class="small-caps-text" :style="{color: `${color}`}">{{header}}</h5>
             <h3 class="item">{{title}}</h3>
             <p style="display: none;">{{text}}<br></p>
             <hr class="separador" style="display: none;" />
-            <h5><a class="small-caps-text" href="#" style="display: none;">resolvemos tus dudas &gt;</a></h5> 
-          </div>             
+            <h5><a class="small-caps-text" href="#" style="display: none;">resolvemos tus dudas &gt;</a></h5>
+          </div>
         </div>
       </div>
 
