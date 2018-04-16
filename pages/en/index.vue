@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div>{{lang}}</div>
     <section>
       <router-link to="/custom">
         <x-city imagen="home-medida.jpg" />
@@ -43,11 +42,8 @@
     },
 
     computed: {
-      langs () {
-        return this.$store.getters.getLanguages
-      },
       lang () {
-        return this.$store.getters.lang
+        return this.$store.getters.getLang
       }
     },
 

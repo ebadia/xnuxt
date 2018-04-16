@@ -43,7 +43,9 @@ module.exports = {
     }
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/ga.js', ssr: false }
+  ],
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
