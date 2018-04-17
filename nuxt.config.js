@@ -44,12 +44,13 @@ module.exports = {
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
   plugins: [
-    { src: '~/plugins/ga.js', ssr: false }
+    // { src: '~/plugins/ga.js', ssr: false }
   ],
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    ['nuxt-sass-resources-loader', '~/assets/styles/globals.scss']
+    ['nuxt-sass-resources-loader', '~/assets/styles/globals.scss'],
+    ['@nuxtjs/google-analitycs', { us: 'UA-41138665-1'}]
   ],
   transition: {
     name: 'fade',
