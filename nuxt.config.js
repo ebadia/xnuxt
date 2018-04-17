@@ -50,7 +50,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     ['nuxt-sass-resources-loader', '~/assets/styles/globals.scss'],
-    ['@nuxtjs/google-analitycs', { us: 'UA-41138665-1'}]
+    ['@nuxtjs/google-analytics', { us: 'UA-41138665-1'}]
   ],
   transition: {
     name: 'fade',
