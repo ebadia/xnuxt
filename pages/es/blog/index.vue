@@ -46,14 +46,21 @@
 
   export default {
     async asyncData({app, store, params}) {
-      if (!store.state.articles.length) {
+      // if (!store.state.articles.length) {
         let articles = await app.$axios.get(
           `${
             store.state.wordpressAPI
             }/wp/v2/posts?orderby=date&per_page=10&_embed`
         );
+
+        console.log('HEADERS', articles.headers);
+        // const total = articles.headers['x-wp-total'];
+        // const totalPages = articles. headers['x-wp-totalpages'];
+        // console.log('TOTAL', total);
+        // console.log('TOTAL PAGES', totalPages);
+
         store.commit("setArticles", articles.data);
-      }
+      // }
     },
     components: {
       XForm,
