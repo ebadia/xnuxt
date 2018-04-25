@@ -6,13 +6,22 @@ const createStore = () => {
       langs: [
         { short: 'es', long: 'Español'},
       ],
-      language: 'es'
+      language: 'es',
+      article: null,
+      articles: [],
+      wordpressAPI: 'http://localhost/xnuxt/wp-json'
     },
 
 		mutations: {
 		  setLanguage (state, lang) {
         state.language = lang
-      }
+      },
+      setArticle (state, data) {
+        state.article = data
+      },
+      setArticles (state, data) {
+        state.articles = state.articles.concat(data)
+      },
     },
 
 		actions: {
@@ -21,7 +30,8 @@ const createStore = () => {
       changeLanguage (context, lang) {
 			  context.commit('setLanguage', lang)
       }
-		},
+
+    },
 
 		getters: {
 		  getLanguages (state) {

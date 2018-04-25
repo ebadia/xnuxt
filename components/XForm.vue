@@ -6,7 +6,7 @@
       </div>
       <div class="col-lg-5 mb-5">
           <h5 class="dorado small-caps-text" style="color: white;">{{headline}}<br></h5>
-          <h3 style="color: white;">{{text}}</h3> 
+          <h3 style="color: white">{{text}}</h3>
       </div>
       <div class="col-lg-5">
         <form>
@@ -26,7 +26,9 @@
           <div class="form-group text-light">
               <input type="checkbox" value="yes"> He leído y acepto la política de privacidad.
           </div>
-          <button type="submit" class="btn btn-light btn-block" style="font-variant: small-caps;">enviar</button>                 
+          <div id="wrapper">
+            <button type="submit" class="btn btn-light form-button" :style="{color: `${color}`}">enviar</button>
+          </div>
         </form>
       </div>
     </div>
@@ -35,7 +37,7 @@
 
 <script>
 export default {
-  props: ["headline", "text", "imagen", "area"],
+  props: ["headline", "text", "imagen", "area", "color"],
   data() {
     return {
       bgImg: require(`~/assets/img/${this.imagen}`)
@@ -45,4 +47,18 @@ export default {
 </script>
 
 <style scoped>
+  .form-button {
+    margin-top: 30px;
+    padding: 15px 0;
+    width: 200px;
+    border-radius: 10px;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+  #wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
 </style>

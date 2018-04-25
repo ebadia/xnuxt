@@ -21,6 +21,11 @@ h1 {
 
 h3 {
   font-size: 2em;
+; font-weight: 200;
+}
+
+h5 {
+  letter-spacing: 0.08em;
 }
 
 .small-caps-text {
@@ -129,20 +134,23 @@ footer {
   font-variant: small-caps;
   color: #ffffff !important;
   text-decoration: none;
+  letter-spacing: 0.08em;
 }
 
 .nav-link:hover {
   display: block;
   background-color: #ffffff;
   color: #000000 !important;
+  letter-spacing: 0.08em;
 }
 
 .header-drop-link {
   display: block;
   font-variant: small-caps;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #000000;
   text-decoration: none;
+  letter-spacing: 0.08em;
 }
 
 .header-drop-link:hover {
@@ -151,24 +159,32 @@ footer {
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
+  letter-spacing: 0.08em;
 }
 
 .footer-title {
   font-variant: small-caps;
-  color: #000000;
+  color: #999999;
   text-decoration: none;
+  letter-spacing: 0.09em;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .footer-text {
-  color: #000000;
+  color: #999999;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .footer-link {
   display: block;
   font-variant: small-caps;
-  color: #000000;
+  color: #999999;
   text-decoration: none;
+  letter-spacing: 0.09em;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .footer-link:hover {
@@ -221,8 +237,14 @@ a.nav-link.active {
   font-size: 48px;
   font-weight: 200;
   display: inline;
-  border-right-width: 1;
-  border-right-style: dotted;
+}
+
+.x-number-list-border {
+  font-size: 36px;
+  display: inline;
+  border-left: 0.05em dotted;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .x-banner {

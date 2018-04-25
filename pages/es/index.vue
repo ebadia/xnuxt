@@ -2,7 +2,7 @@
   <div>
     <section>
       <router-link to="/custom">
-        <x-city imagen="home-medida.jpg" />
+        <x-city imagen="home-medida.jpg" cta="cta-medida.jpg" />
       </router-link>
     </section>
 
@@ -19,7 +19,7 @@
     </section>
 
     <section>
-      <x-form headline="solicita información y asesoramiento sin compromiso" text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de tus necesidades?" imagen="home-form.jpg" area="contact" />
+      <x-form headline="solicita información y asesoramiento sin compromiso" text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de tus necesidades?" imagen="home-form.jpg" area="contact" color="#FF5252" />
     </section>
 
   </div>
@@ -71,19 +71,20 @@
 
         list: [
           {
-            title: "Originalidad.",
+            title: "Calidad de software.",
             text:
-              "Tiene que transmitir confianza y llamar la atención por su originalidad y estilo, que ha de asociarse con tu marca.."
+              "Utilizamos la mejor tecnología de desarrollo de software para que tu sistema sea eficaz, potente,  de calidad y verdaderamente útil."
           },
           {
-            title: "Adaptabilidad.",
+            title: "Escalabilidad.",
             text:
-              "Que se pueda adaptar fácilmente en tus canales online y comunicaciones impresas offline sin perder su identidad."
+              "El futuro de tu proyecto es importante para nosotros. Facilitamos que tu programa pueda adaptarse y seguir creciendo en el futuro, acorde a las nuevas necesidades."
           },
           {
-            title: "Versatilidad.",
+            title: "Mantenibilidad.",
             text:
-              "Tu logotipo debe poder ser reescalable sin perder legiblidad y adaptarse a diferentes formatos de soporte por lo creamos diversas aplicaciones."
+              "Mantenibilidad" +
+              "Desarrollamos un código resistente ante los cambios y tests automatizados para asegurar su mantenibilidad ante los siguientes evolutivos."
           }
         ],
       }

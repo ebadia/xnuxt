@@ -1,12 +1,14 @@
 <template>
-  <div class="card" style="border: none; padding: 0px; background-color: #EBEBEB; min-height: 525px;">
-    <img class="card-img-top" :src="require(`~/assets/img/${image}`)" alt="xtremis">
+  <div class="card" style="border: none; padding: 0px; background-color: #EBEBEB; min-height: 500px;">
+    <div class="blog-img">
+      <img class="card-img-top" :src="image" alt="xtremis">
+    </div>
     <div class="card-body">
       <div>
         <h6 class="mb-2 small-caps-text" :style="{ color: `${color}`, float: 'left' }">{{categoria}}</h6>
         <h6 class="mb-2 small-caps-text" :style="{ color: `${color}`, float: 'right'}">{{fecha}}</h6>
       </div>
-      <h3 style="font-weight: 200; margin-top: 20px; clear: both;">{{title}}</h3>
+      <h3 style="font-weight: 200; margin-top: 30px; clear: both;">{{title}}</h3>
     </div>
   </div>
 </template>
@@ -34,6 +36,16 @@ export default {
       type: String,
       required: true
     }
-  }
+  },
+   created () {
+    console.log("TITLE", this.title)
+   }
 };
 </script>
+
+<style scoped>
+  .blog-img {
+    height: 250px;
+    overflow: hidden;
+  }
+</style>

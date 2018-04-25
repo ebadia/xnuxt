@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   router: {
     base: '/xnuxt/'
@@ -40,11 +42,19 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    plugins: [
+      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
+    ],
+    vendor: [
+      'moment'
+    ]
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
   plugins: [
-    // { src: '~/plugins/ga.js', ssr: false }
+    // { src: '~/plugins/ga.js', ssr: false },
+    { src: '~/plugins/mixins' },
+
   ],
   modules: [
     'bootstrap-vue/nuxt',
