@@ -9,7 +9,7 @@ const createStore = () => {
       language: 'es',
       article: null,
       articles: [],
-      wordpressAPI: 'http://localhost/xnuxt/wp-json'
+      wordpressAPI: 'http://ebadia.com/proyectos/xnuxt/wp-json'
     },
 
 		mutations: {
