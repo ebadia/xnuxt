@@ -9,6 +9,8 @@ const createStore = () => {
       language: 'es',
       article: null,
       articles: [],
+      totalArticles: null,
+      totalPages: null,
       wordpressAPI: 'http://ebadia.com/proyectos/xnuxt/wp-json'
     },
 
@@ -18,6 +20,15 @@ const createStore = () => {
       },
       setArticle (state, data) {
         state.article = data
+      },
+      setArticles (state, data) {
+        state.articles = data
+      },
+      setTotalArticles (state, data) {
+        state.totalArticles = data
+      },
+      setTotalPages (state, data) {
+        state.totalPages = data
       },
       setArticles (state, data) {
         state.articles = state.articles.concat(data)

@@ -44,8 +44,15 @@ export default {
 </script>
 
 <style scoped>
+  .card-body {
+    background-color: #FAFAFA;
+  }
+
   .blog-img {
     height: 250px;
     overflow: hidden;
+  }
+  h3 {
+    font-weight: 200;
   }
 </style>

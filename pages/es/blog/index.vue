@@ -31,6 +31,10 @@
     </section>
 
     <section>
+      <XPaginator></XPaginator>
+    </section>
+
+    <section>
       <x-form headline="solicita información y asesoramiento sin compromiso"
               text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de tus necesidades?"
               imagen="home-form.jpg" area="contact"/>
@@ -43,29 +47,30 @@
   import XForm from "~/components/XForm";
   import XBlogCard from "~/components/XBlogCard";
   import XBlogBanner from "~/components/XBlogBanner";
+  import XPaginator from "~/components/XPaginator";
 
   export default {
     async asyncData({app, store, params}) {
-      // if (!store.state.articles.length) {
+      if (!store.state.articles.length) {
         let articles = await app.$axios.get(
           `${
             store.state.wordpressAPI
             }/wp/v2/posts?orderby=date&per_page=10&_embed`
         );
 
-        console.log('HEADERS', articles.headers);
-        // const total = articles.headers['x-wp-total'];
-        // const totalPages = articles. headers['x-wp-totalpages'];
-        // console.log('TOTAL', total);
-        // console.log('TOTAL PAGES', totalPages);
+        const total = articles.headers['x-wp-total'];
+        const totalPages = articles. headers['x-wp-totalpages'];
 
         store.commit("setArticles", articles.data);
-      // }
+        store.commit("setTotalArticles", total);
+        store.commit("setTotalPages", totalPages);
+      }
     },
     components: {
       XForm,
       XBlogCard,
-      XBlogBanner
+      XBlogBanner,
+      XPaginator,
     },
     data() {
       return {
