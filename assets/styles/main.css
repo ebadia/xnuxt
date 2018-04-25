@@ -159,11 +159,32 @@ footer {
   border: none;
 }
 
+.header-link {
+  display: block;
+  font-variant: small-caps;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+}
+
 .header-drop-link {
   display: block;
   font-variant: small-caps;
   font-size: 1rem;
+  font-weight: bold;
   color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+}
+
+.header-link:hover {
+  display: block;
+  font-variant: small-caps;
+  background-color: #000000;
+  font-weight: bold;
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.08em;
 }
@@ -172,9 +193,14 @@ footer {
   display: block;
   font-variant: small-caps;
   background-color: #000000;
+  font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.08em;
+}
+
+.dropdown-item:focus {
+  outline-style: none;
 }
 
 .footer-title {
@@ -212,13 +238,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-li.nav-item.active {
-  border-bottom: 4px solid white;
-}
+/*li.nav-item.active {*/
+  /*border-bottom: 4px solid white;*/
+/*}*/
 
-a.nav-link.active {
-  border-bottom: 4px solid white;
-}
+/*a.nav-link.active {*/
+  /*border-bottom: 4px solid white;*/
+/*}*/
 
 .navbar-toggler {
   background-color: white;

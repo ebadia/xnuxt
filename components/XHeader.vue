@@ -49,7 +49,6 @@
 
           this.$store.dispatch('changeLanguage', lang)
 
-          // const computedRoute = (lang===this.langs[0]['short'])?`${this.$route.path.substring(3)}`:`/${lang}${this.$route.path.substring(0)}`
           const computedRoute = `/${lang}${this.$route.path.substring(3)}`
           this.$router.push(computedRoute)
         }
