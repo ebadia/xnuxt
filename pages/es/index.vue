@@ -83,7 +83,6 @@
           {
             title: "Mantenibilidad.",
             text:
-              "Mantenibilidad" +
               "Desarrollamos un código resistente ante los cambios y tests automatizados para asegurar su mantenibilidad ante los siguientes evolutivos."
           }
         ],
