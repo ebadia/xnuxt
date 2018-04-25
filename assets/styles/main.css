@@ -144,6 +144,21 @@ footer {
   letter-spacing: 0.08em;
 }
 
+.dropdown-toggle:hover:after {
+  background-image: url('~/assets/img/icon-dreta-black.svg');
+}
+
+.dropdown-toggle:after {
+  display: inline-block;
+  content: '';
+  background-image: url('~/assets/img/icon-dreta.svg');
+  background-size: 8px 8px;
+  height: 8px;
+  width: 8px;
+  vertical-align: inherit;
+  border: none;
+}
+
 .header-drop-link {
   display: block;
   font-variant: small-caps;
@@ -252,6 +267,10 @@ a.nav-link.active {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.x-banner-blog {
+  box-shadow: inset 0 0 0 1000px rgba(0 , 0, 0, .5);
 }
 
 .x-city {

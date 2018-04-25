@@ -1,42 +1,34 @@
 <template>
   <div>
 
-    <!--<section>-->
-      <!--<div class="pt-5 pb-5">-->
-        <!--<div class="row ml-md-5 mr-md-5 pl-5 pr-5">-->
-          <!--<div class="col md-8">-->
-            <!--<div class="row ml-md-5 mr-md-5 pl-5 pr-5">-->
-              <!--<div class="col-12">-->
-                <!--<XBlogBanner-->
-                  <!--:image="$store.state.articles[0]._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url"-->
-                  <!--:categoria="$store.state.articles[0]._embedded['wp:term'][0][0].name"-->
-                  <!--:fecha="longTimestamp($store.state.articles[0].date)"-->
-                  <!--:title="$store.state.articles[0].title.rendered" :color="color"></XBlogBanner>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</section>-->
+    <section>
+      <div class="pt-5 pb-5">
+        <div class="row ml-md-5 mr-md-5 pl-5 pr-5">
+              <div class="col-12">
+                <XBlogBanner
+                  :image="$store.state.articles[0]._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url"
+                  :categoria="$store.state.articles[0]._embedded['wp:term'][0][0].name"
+                  :fecha="longTimestamp($store.state.articles[0].date)"
+                  :title="$store.state.articles[0].title.rendered" :color="color"></XBlogBanner>
+              </div>
+        </div>
+      </div>
+    </section>
 
-    <!--<section>-->
-      <!--<div class="pt-5 pb-5">-->
-        <!--<div class="row ml-md-5 mr-md-5 pl-5 pr-5">-->
-          <!--<div class="col md-8">-->
-            <!--<div class="row ml-md-5 mr-md-5 pl-5 pr-5">-->
-              <!--<div class="col-md-6 pt-md-2 pb-md-2" v-for="(article, index) in $store.state.articles" :key="index"-->
-                   <!--v-if="index>0">-->
-                <!--<XBlogCard :image="article._embedded['wp:featuredmedia'][0].media_details.medium.source_url"-->
-                           <!--:categoria="article._embedded['wp:term'][0][0].name"-->
-                           <!--:fecha="longTimestamp(article.date)"-->
-                           <!--:title="article.title.rendered"-->
-                           <!--:color="color"/>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</section>-->
+    <section>
+      <div class="pt-5 pb-5">
+        <div class="row ml-md-5 mr-md-5 pl-5 pr-5">
+          <div class="col-md-6 pt-md-2 pb-md-2 pt-5" v-for="(article, index) in $store.state.articles" :key="index"
+               v-if="index>0">
+            <XBlogCard :image="article._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url"
+                       :categoria="article._embedded['wp:term'][0][0].name"
+                       :fecha="longTimestamp(article.date)"
+                       :title="article.title.rendered"
+                       :color="color"/>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <x-form headline="solicita información y asesoramiento sin compromiso"

@@ -1,10 +1,14 @@
 <template>
   <div style="margin-top: 60px">
-    <div :style="{ backgroundImage: `url(${image})`, backgroundPosition: 'right center' }" class="d-md-flex bg-secondary d-flex align-items-center x-banner">
-    <h3 style="font-weight: 200; margin-top: 60px; clear: both;">{{title}}</h3>
-    <h6 class="mb-2 small-caps-text" :style="{ color: `${color}` }">{{categoria}}</h6>
-    <hr>
-    <h6 class="mb-2 small-caps-text" :style="{ color: `${color}` }">{{fecha}}</h6>
+    <div :style="{ backgroundImage: `url(${image})`, backgroundPosition: 'right center' }" class="x-banner d-flex align-items-center x-banner-blog">
+      <div class="row no-gutters d-flex flex-column align-items-center" style="width: 100%;">
+        <div class="d-flex flex-column align-items-center">
+          <h6 class="small-caps-text" :style="{ color: `${color}` }">{{categoria}}</h6>
+          <h3 style="font-weight: 200; color: white;">{{title}}</h3>
+          <hr style="border-bottom: 1px solid white; width: 100%;">
+          <h6 class="small-caps-text" style="color: white;">{{fecha}}</h6>
+        </div>
+      </div>
     </div>
   </div>
 </template>
