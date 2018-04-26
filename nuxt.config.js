@@ -20,7 +20,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/vnd.microsoft.icon', href: '/favicon_xtremis-4bdbe28d8411c86797a05669a78e8a74.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700' }
-      ]
+    ],
+    script: [
+      { src: "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" }
+    ]
   },
   /*
   ** Customize the progress bar color
@@ -47,14 +50,15 @@ module.exports = {
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ],
     vendor: [
-      'moment'
+      'moment',
+      'vue-mq',
     ]
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
   plugins: [
     // { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/mixins' },
-
+    '~/plugins/mq'
   ],
   modules: [
     'bootstrap-vue/nuxt',

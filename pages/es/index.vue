@@ -71,19 +71,19 @@
 
         list: [
           {
-            title: "Calidad de software.",
+            title: "Calidad de software",
             text:
-              "Utilizamos la mejor tecnología de desarrollo de software para que tu sistema sea eficaz, potente,  de calidad y verdaderamente útil."
+              "Utilizamos la mejor tecnología de desarrollo de software para que tu sistema sea eficaz, potente, de calidad y verdaderamente útil"
           },
           {
-            title: "Escalabilidad.",
+            title: "Escalabilidad",
             text:
-              "El futuro de tu proyecto es importante para nosotros. Facilitamos que tu programa pueda adaptarse y seguir creciendo en el futuro, acorde a las nuevas necesidades."
+              "El futuro de tu proyecto es importante para nosotros. Facilitamos que tu programa pueda adaptarse y seguir creciendo en el futuro, acorde a las nuevas necesidades"
           },
           {
-            title: "Mantenibilidad.",
+            title: "Mantenibilidad",
             text:
-              "Desarrollamos un código resistente ante los cambios y tests automatizados para asegurar su mantenibilidad ante los siguientes evolutivos."
+              "Desarrollamos un código resistente ante los cambios y tests automatizados para asegurar su mantenibilidad ante los siguientes evolutivos"
           }
         ],
       }

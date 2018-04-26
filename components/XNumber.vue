@@ -8,7 +8,7 @@
       <p>{{title}}</p>
     </div>
     <div>
-      <p>{{text}}.</p>
+      <p>{{text}}</p>
     </div>
   </div>
 </template>

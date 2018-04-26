@@ -2,12 +2,12 @@
   <footer class="pt-5 pb-5">
     <div class="row item">
       <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-8">
-        <h1>Hola</h1>
+        <div class="h1">Hola</div>
       </div>
     </div>
     <div class="row item">
       <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-8">
-        <p><img src="~/assets/img/logo-gris.png" width="80" height="auto" alt=""></p>
+        <p><img src="~/assets/img/logo-gris.png" width="112" height="auto" alt=""></p>
       </div>
     </div>
     <div class="row item">
@@ -99,6 +99,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .h1 {
+    font-size: 60px;
+    font-weight: 200;
+  }
 .twitter {
   width: 40px;
   height: 30px;
