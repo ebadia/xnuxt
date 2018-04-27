@@ -8,10 +8,11 @@ const createStore = () => {
       ],
       language: 'es',
       article: null,
+      featuredImage: null,
       articles: [],
       totalArticles: null,
       totalPages: null,
-      wordpressAPI: 'http://ebadia.com/proyectos/xnuxt/wp-json'
+      wordpressAPI: 'https://ebadia.com/proyectos/xnuxt/wp-json'
     },
 
 		mutations: {
@@ -30,8 +31,8 @@ const createStore = () => {
       setTotalPages (state, data) {
         state.totalPages = data
       },
-      setArticles (state, data) {
-        state.articles = state.articles.concat(data)
+      setFeaturedImage (state, data) {
+        state.featuredImage = data
       },
     },
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="card" style="border: none; padding: 0px; background-color: #EBEBEB; min-height: 500px;">
+  <div class="card" style="">
     <div class="blog-img">
       <img class="card-img-top" :src="image" alt="xtremis">
     </div>
@@ -8,7 +8,7 @@
         <h6 class="mb-2 small-caps-text" :style="{ color: `${color}`, float: 'left' }">{{categoria}}</h6>
         <h6 class="mb-2 small-caps-text" :style="{ color: `${color}`, float: 'right'}">{{fecha}}</h6>
       </div>
-      <h3 style="font-weight: 200; margin-top: 30px; clear: both;">{{title}}</h3>
+      <div class="h3 title">{{title}}</div>
     </div>
   </div>
 </template>
@@ -44,15 +44,39 @@ export default {
 </script>
 
 <style scoped>
-  .card-body {
+  .title {
+    font-weight: 200;
+    margin-top: 30px;
+    clear: both;
+  }
+  .card {
     background-color: #FAFAFA;
+    display: block;
+    cursor: pointer ;
+    border: none;
+    padding: 0px;
+    min-height: 500px;
   }
 
   .blog-img {
     height: 250px;
     overflow: hidden;
   }
-  h3 {
+
+  .h3 {
+    font-size: 38px;
     font-weight: 200;
+  }
+  @media (max-width: 960px) {
+    .h3 {
+      font-size: 24px;
+      font-weight: 200;
+    }
+
+    .card {
+      min-height: 400px;
+    }
+
+
   }
 </style>

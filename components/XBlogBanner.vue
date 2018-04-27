@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top: 60px">
+  <div style="margin-top: 0px; display: block; cursor: pointer ; ">
     <div :style="{ backgroundImage: `url(${image})`, backgroundPosition: 'right center' }" class="x-banner d-flex align-items-center x-banner-blog">
       <div class="row no-gutters d-flex flex-column align-items-center" style="width: 100%;">
         <div class="d-flex flex-column align-items-center">
@@ -44,4 +44,10 @@
 </script>
 
 <style scoped>
+  .x-banner {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
 </style>

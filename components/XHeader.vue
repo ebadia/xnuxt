@@ -19,9 +19,9 @@
           <b-nav-item :to="`${langPath}/contact`" class="header-link">contacto</b-nav-item>
           <b-nav-item :to="`${langPath}/blog`" class="header-link">blog</b-nav-item>
 
-          <b-nav-item-dropdown id="dd-idioma" text="idioma" class="header-link">
-            <b-dropdown-item class="dropdown-item header-drop-link" v-for="lang in langs" :key="lang.short" @click="changeLang(lang.short)">{{lang.long}}</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <!--<b-nav-item-dropdown id="dd-idioma" text="idioma" class="header-link">-->
+            <!--<b-dropdown-item class="dropdown-item header-drop-link" v-for="lang in langs" :key="lang.short" @click="changeLang(lang.short)">{{lang.long}}</b-dropdown-item>-->
+          <!--</b-nav-item-dropdown>-->
 
         </b-navbar-nav>
       </b-collapse>
