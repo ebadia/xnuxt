@@ -58,7 +58,7 @@ module.exports = {
   plugins: [
     // { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/mixins' },
-    '~/plugins/mq'
+    '~/plugins/mq',
   ],
   modules: [
     'bootstrap-vue/nuxt',

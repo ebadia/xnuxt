@@ -74,7 +74,7 @@ export default {
     }
 
     .card {
-      min-height: 400px;
+      min-height: 450px;
     }
 
 

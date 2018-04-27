@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <router-link to="/custom">
+      <router-link :to="`/${$store.state.language}/custom`">
         <x-city imagen="home-medida.jpg" cta="cta-medida.jpg" />
       </router-link>
     </section>

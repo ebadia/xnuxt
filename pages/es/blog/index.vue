@@ -1,8 +1,8 @@
 <template>
   <div>
 
-    <div v-if="loading">
-      <i class="fa fa-spinner fa-spin" style="font-size:42px"></i>
+    <div v-if="loading" class="mt-5 pt-5" style="text-align: center;">
+      <img src="~/assets/img/loading_icon.gif" />
     </div>
 
     <div v-else>
@@ -44,6 +44,7 @@
                 text="¿Tu empresa necesita mejorar su tecnología con un software integral y personalizado, a la medida de tus necesidades?"
                 imagen="home-form.jpg" area="contact"/>
       </section>
+
     </div>
 
 
@@ -58,22 +59,18 @@
 
   export default {
     async asyncData({app, store, params}) {
-      let loading = true;
-      if (!store.state.articles.length) {
-        let articles = await app.$axios.get(
-          `${
-            store.state.wordpressAPI
-            }/wp/v2/posts?orderby=date&per_page=10&_embed`
-        );
-
-        const total = articles.headers['x-wp-total'];
-        const totalPages = articles. headers['x-wp-totalpages'];
-
-        store.commit("setArticles", articles.data);
-        store.commit("setTotalArticles", total);
-        store.commit("setTotalPages", totalPages);
+      return {
+        loading: false
       }
-      loading = false;
+    },
+    created () {
+      this.loading = true
+      // if (!this.$store.state.articles.length) {
+        this.$store.dispatch('setArticles').then( () => {
+          console.log('FROM DISPATCH')
+          this.loading = false
+        })
+      // }
     },
     components: {
       XForm,
