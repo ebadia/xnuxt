@@ -89,7 +89,7 @@
     },
     methods: {
       goto(id) {
-        this.$router.push({ path: `/${this.$store.state.language}/blog/${id}`});
+        this.$router.push({ path: `/${this.$store.state.language}/blog/${id}/`});
       }
     }
   };
