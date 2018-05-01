@@ -126,11 +126,11 @@
   head () {
     return {
       meta: [
-        { hid: 'og:url', property: 'og:url', content: `https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}/` },
-        { hid: 'og:type', property: 'og:type', content: 'article' },
-        { hid: 'og:title', property: 'og:title', content: `${this.$store.state.article.title.rendered}` },
-        { hid: 'og:description', property: 'og:description', content: `${this.$store.state.article.excerpt.rendered}` },
-        { hid: 'og:image', property: 'og:image', content: `${this.$store.state.featuredImage.source_url}` },
+        { hid: `og:url`, property: 'og:url', content: `https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}/` },
+        { hid: `og:type`, property: 'og:type', content: 'article' },
+        { hid: `og:title`, property: 'og:title', content: `${this.$store.state.article.title.rendered}` },
+        { hid: `og:description`, property: 'og:description', content: `${this.$store.state.article.excerpt.rendered}` },
+        { hid: `og:image`, property: 'og:image', content: `${this.$store.state.featuredImage.source_url}` },
       ]
     }
   }
