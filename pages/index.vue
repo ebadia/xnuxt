@@ -57,19 +57,27 @@
         ctas: [
           {
             img: "home-app.jpg",
-            url: "/mobile"
+            url: "/mobile",
+            title: 'Desarrollo de aplicaciones para móvil',
+            subtitle: 'Llevamos tu aplicaión al móvil'
           },
           {
             img: "home-web.jpg",
-            url: "/webapps"
+            url: "/webapps",
+            title: 'Desarrollo de aplicaciones para móvil',
+            subtitle: 'Llevamos tu aplicaión al móvil'
           },
           {
             img: "home-consultoria.jpg",
-            url: "/consulting"
+            url: "/consulting",
+            title: 'Desarrollo de aplicaciones para móvil',
+            subtitle: 'Llevamos tu aplicaión al móvil'
           },
           {
             img: "home-identitat.jpg",
-            url: "/design"
+            url: "/design",
+            title: 'Desarrollo de aplicaciones para móvil',
+            subtitle: 'Llevamos tu aplicaión al móvil'
           }
         ],
 

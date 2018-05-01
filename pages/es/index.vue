@@ -53,19 +53,27 @@
         ctas: [
           {
             img: "home-app.jpg",
-            url: "/mobile"
+            url: "/mobile",
+            title: 'Desarrollo de aplicaciones para móvil',
+            subtitle: 'Llevamos tu aplicación al móvil'
           },
           {
             img: "home-web.jpg",
-            url: "/webapps"
+            url: "/webapps",
+            title: 'Desarrollo web',
+            subtitle: 'UX, SEO, Conversión'
           },
           {
             img: "home-consultoria.jpg",
-            url: "/consulting"
+            url: "/consulting",
+            title: 'Consultorí informática',
+            subtitle: 'Facilitamos tu integración tecnológica'
           },
           {
             img: "home-identitat.jpg",
-            url: "/design"
+            url: "/design",
+            title: 'Diseño de dentidad corporativa',
+            subtitle: 'Diseño gráfico Made in Barcelona'
           }
         ],
 

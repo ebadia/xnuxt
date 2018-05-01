@@ -163,7 +163,7 @@ on y offline." text="Por eso no nos quedamos solamente en el diseño web y la pr
       return {
         title: 'Diseño de identidad corporativa digital. Xtremis',
         meta: [
-          { name: "description", content: "Diseño de identidad corporativa digital. En Barcelona y Bilbao. Xtremis." },
+          { hid: `description`, name: "description", content: "Diseño de identidad corporativa digital. En Barcelona y Bilbao. Xtremis." },
         ]
       }
     }

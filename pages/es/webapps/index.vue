@@ -192,7 +192,7 @@ export default {
     return {
       title: 'Diseño de páginas web, e-business, B2B. Xtremis',
       meta: [
-        { name: "description", content: "Diseño de páginas web, e-business, B2B. En Barcelona y Bilbao. Xtremis." },
+        { hid: `description`, name: "description", content: "Diseño de páginas web, e-business, B2B. En Barcelona y Bilbao. Xtremis." },
       ]
     }
   }

@@ -131,7 +131,7 @@ export default {
 	  return {
 	    title: 'Desarrollo de software a medida. Xtremis',
 	    meta: [
-        { name: "description", content: "Desarrollo de software a medida. En Barcelona y Bilbao. Xtremis." },
+        { hid: `description`, name: "description", content: "Desarrollo de software a medida. En Barcelona y Bilbao. Xtremis." },
       ]
     }
   }

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <no-ssr>
     <section>
       <div class="row mt-5 pt-5">
         <div class="col-md-10 offset-md-1">
@@ -55,7 +54,6 @@
               <div class="mt-5" v-html="$store.state.article.content.rendered"></div>
               <div class="float-right">
                 <div class="mt-5">Compartir</div>
-                <!--<social-sharing :url="`https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}`"-->
                 <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}`"
                                 :title="`${$store.state.article.title.rendered}`"
                                 :description="`${$store.state.article.excerpt.rendered}`"
@@ -92,7 +90,6 @@
               imagen="home-form.jpg" area="contact"/>
     </section>
 
-    </no-ssr>
   </div>
 </template>
 

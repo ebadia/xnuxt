@@ -200,7 +200,7 @@ export default {
     return {
       title: 'Consultoría informática. Xtremis',
       meta: [
-        { name: "description", content: "Consultoría informática. En Barcelona y Bilbao. Xtremis." },
+        { hid: `description`, name: "description", content: "Consultoría informática. En Barcelona y Bilbao. Xtremis." },
       ]
     }
   }
