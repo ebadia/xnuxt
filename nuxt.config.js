@@ -12,7 +12,6 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: "description", content: "Desarrollo de software a medida, aplicaciones para teléfonos móviles, diseño de páginas web, e-business, B2B, consultoría de TI. En Barcelona y Bilbao" },
       { name: "keywords", content: "custom software,web design,apps for mobile phones,web,programm development,IT applications,programms,java,html,css,angular,jasmine,ruby,flex,air,flash,mysql,oracle,db2" },
       { name: "author", content: "Xtremis" },
       { content: "authenticity_token", name: "csrf-param"  },

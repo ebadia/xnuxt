@@ -34,7 +34,7 @@
 
     <section>
       <x-cta :ctas="ctas"/>
-    </section>    
+    </section>
 
 	</div>
 </template>
@@ -195,7 +195,15 @@ export default {
 				}
 			]
 		};
-	}
+	},
+  head () {
+    return {
+      title: 'Consultoría informática. Xtremis',
+      meta: [
+        { name: "description", content: "Consultoría informática. En Barcelona y Bilbao. Xtremis." },
+      ]
+    }
+  }
 };
 </script>
 

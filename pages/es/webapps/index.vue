@@ -30,7 +30,7 @@
 
     <section>
       <x-cta :ctas="ctas"/>
-    </section>    
+    </section>
 
 	</div>
 </template>
@@ -187,7 +187,15 @@ export default {
 				}
 			]
 		};
-	}
+	},
+  head () {
+    return {
+      title: 'Diseño de páginas web, e-business, B2B. Xtremis',
+      meta: [
+        { name: "description", content: "Diseño de páginas web, e-business, B2B. En Barcelona y Bilbao. Xtremis." },
+      ]
+    }
+  }
 };
 </script>
 

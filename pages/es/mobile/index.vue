@@ -166,7 +166,15 @@ export default {
 				}
 			]
 		};
-	}
+	},
+  head () {
+    return {
+      title: 'Desarrollo de aplicaciones para teléfonos móviles. Xtremis',
+      meta: [
+        { name: "description", content: "Desarrollo de aplicaciones para teléfonos móviles. En Barcelona y Bilbao. Xtremis." },
+      ]
+    }
+  }
 };
 </script>
 

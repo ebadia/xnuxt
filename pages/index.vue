@@ -93,8 +93,17 @@
       }
     },
     created () {
+    },
+    head () {
+      return {
+        title: 'Xtremis',
+        meta: [
+          { name: "description", content: "Desarrollo de software a medida, aplicaciones para teléfonos móviles, diseño de páginas web, e-business, B2B, consultoría de TI. En Barcelona y Bilbao. Xtremis." },
+        ]
+      }
     }
-  }
+
+    }
 </script>
 
 <style>
