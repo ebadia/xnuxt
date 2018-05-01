@@ -54,7 +54,7 @@
               <div class="mt-5" v-html="$store.state.article.content.rendered"></div>
               <div class="float-right">
                 <div class="mt-5">Compartir</div>
-                <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}`"
+                <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}/`"
                                 :title="`${$store.state.article.title.rendered}`"
                                 :description="`${$store.state.article.excerpt.rendered}`"
                                 hashtags="xtremis"
@@ -126,7 +126,7 @@
   head () {
     return {
       meta: [
-        { hid: 'og:url', property: 'og:url', content: `https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}` },
+        { hid: 'og:url', property: 'og:url', content: `https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}/` },
         { hid: 'og:type', property: 'og:type', content: 'article' },
         { hid: 'og:title', property: 'og:title', content: `${this.$store.state.article.title.rendered}` },
         { hid: 'og:description', property: 'og:description', content: `${this.$store.state.article.excerpt.rendered}` },
