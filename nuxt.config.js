@@ -73,18 +73,24 @@ module.exports = {
     name: 'fade',
     mode: 'out-in'
   },
-  // generate: {
-  //   routes: function() {
-  //     return axios.get(
-  //       `https://ebadia.com/proyectos/xnuxt/wp-json/wp/v2/posts`
-  //     ).then(
-  //       res => {
-  //         return res.data.map(
-  //           (article) => {
-  //             return `/es/blog/${article.id}`
-  //           }
-  //         )
-  //       })
-  //   }
-  // }
+  generate: {
+    routes: function() {
+      return axios.get(
+        `https://ebadia.com/proyectos/xnuxt/wp-json/wp/v2/posts`
+      ).then(
+        res => {
+          const bes = res.data.map(
+            (article) => {
+              return `/es/blog/${article.id}`
+            }
+          )
+          const ben = res.data.map(
+            (article) => {
+              return `/en/blog/${article.id}`
+            }
+          )
+          return bes.concat(ben)
+        })
+    }
+  }
 }
