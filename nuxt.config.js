@@ -57,7 +57,6 @@ module.exports = {
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
   plugins: [
-    // { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/mixins' },
     { src: '~/plugins/fa' },
     { src: '~/plugins/vue-social-sharing' },

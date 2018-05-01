@@ -79,7 +79,26 @@ const createStore = () => {
             resolve()
           })
         })
-       }
+      },
+
+      setArticle ( {commit, state, params}, post ) {
+			  console.log('PARAMS', state)
+			  console.log('PARAMS', params)
+        return new Promise( (resolve, reject) => {
+          axios.get(
+            `${
+              state.wordpressAPI
+              }/wp/v2/posts/${post}?context=view`
+          ).then( article => {
+            store.commit("setArticle", article.data);
+            axios.get(`${article._links['wp:featuredmedia'][0].href}`).then( image => {
+              store.commit("setFeaturedImage", image.data)
+              resolve()
+            })
+
+          })
+        })
+      }
 
     },
 

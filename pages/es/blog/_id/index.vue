@@ -55,7 +55,7 @@
               <div class="float-right">
                 <div class="mt-5">Compartir</div>
                 <!--<social-sharing :url="`https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}`"-->
-                <social-sharing
+                <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}`"
                                 :title="`${$store.state.article.title.rendered}`"
                                 :description="`${$store.state.article.excerpt.rendered}`"
                                 hashtags="xtremis"
@@ -99,27 +99,27 @@
 
   export default {
   async asyncData({app, store, params, req}) {
-      let article = await app.$axios.get(
-        `${
-          store.state.wordpressAPI
-          }/wp/v2/posts/${params.id}?context=view`
-      );
+    let article = await app.$axios.get(
+      `${
+        store.state.wordpressAPI
+        }/wp/v2/posts/${params.id}?context=view`
+    );
 
-      store.commit("setArticle", article.data);
+    store.commit("setArticle", article.data);
 
-      let image = await app.$axios.get(`${store.state.article._links['wp:featuredmedia'][0].href}`);
-      store.commit("setFeaturedImage", image.data)
-
-    let host = req ? req.headers.host : window.location.protocol + '//' + window.location.href
+    let image = await app.$axios.get(`${store.state.article._links['wp:featuredmedia'][0].href}`);
+    store.commit("setFeaturedImage", image.data)
 
     return {
-        url: host
+      loading: false,
     }
 
   },
+
   components: {
     XForm,
   },
+
   head () {
     return {
       meta: [
