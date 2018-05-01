@@ -1,5 +1,6 @@
 <template>
   <div>
+    <no-ssr>
     <section>
       <div class="row mt-5 pt-5">
         <div class="col-md-10 offset-md-1">
@@ -55,7 +56,7 @@
               <div class="float-right">
                 <div class="mt-5">Compartir</div>
                 <!--<social-sharing :url="`https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}`"-->
-                <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}`"
+                <social-sharing :url="`https://ebadia.com/xnuxt${$nuxt.$route.fullPath}`"
                                 :title="`${$store.state.article.title.rendered}`"
                                 :description="`${$store.state.article.excerpt.rendered}`"
                                 hashtags="xtremis"
@@ -91,6 +92,7 @@
               imagen="home-form.jpg" area="contact"/>
     </section>
 
+    </no-ssr>
   </div>
 </template>
 
@@ -116,6 +118,10 @@
 
   },
 
+  created () {
+
+  },
+
   components: {
     XForm,
   },
@@ -123,7 +129,7 @@
   head () {
     return {
       meta: [
-        { property: 'og:url', content: `https://ebadia.github.io/xnuxt${this.$nuxt.$route.fullPath}` },
+        { property: 'og:url', content: `https://ebadia.com/xnuxt${this.$nuxt.$route.fullPath}` },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: `${this.$store.state.article.title.rendered}` },
         { property: 'og:description', content: `${this.$store.state.article.excerpt.rendered}` },

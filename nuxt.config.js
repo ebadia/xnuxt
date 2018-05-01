@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const axios = require('axios')
 
 module.exports = {
   router: {
@@ -51,7 +52,8 @@ module.exports = {
     vendor: [
       'moment',
       'vue-mq',
-      'vue-social-sharing'
+      'vue-social-sharing',
+
     ]
   },
   css: ['~/assets/styles/main.css', '~/assets/styles/main.scss'],
@@ -70,5 +72,19 @@ module.exports = {
   transition: {
     name: 'fade',
     mode: 'out-in'
-  }
+  },
+  // generate: {
+  //   routes: function() {
+  //     return axios.get(
+  //       `https://ebadia.com/proyectos/xnuxt/wp-json/wp/v2/posts`
+  //     ).then(
+  //       res => {
+  //         return res.data.map(
+  //           (article) => {
+  //             return `/es/blog/${article.id}`
+  //           }
+  //         )
+  //       })
+  //   }
+  // }
 }
