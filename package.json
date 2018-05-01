@@ -13,6 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.10",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "@fortawesome/vue-fontawesome": "0.0.22",
     "@nuxtjs/auth": "^4.0.0-rc.3",
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/google-analytics": "^2.0.2",
@@ -21,7 +25,8 @@
     "nuxt": "^1.0.0",
     "nuxt-sass-resources-loader": "^1.2.0",
     "vue-content-loader": "^0.2.1",
-    "vue-mq": "^0.2.1"
+    "vue-mq": "^0.2.1",
+    "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

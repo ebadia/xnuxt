@@ -52,6 +52,33 @@
 
             <div class="col-md-8">
               <div class="mt-5" v-html="$store.state.article.content.rendered"></div>
+              <div class="float-right">
+                <div class="mt-5">Compartir</div>
+                <social-sharing :url="`https://ebadia.github.io/xnuxt${$nuxt.$route.fullPath}`"
+                                :title="`${$store.state.article.title.rendered}`"
+                                :description="`${$store.state.article.excerpt.rendered}`"
+                                quote="Vue is a progressive framework for building user interfaces."
+                                hashtags="xtremis"
+                                twitter-user="xtremis"
+                                inline-template>
+                  <div class="mb-5">
+                    <network network="facebook">
+                      <span class="mr-3"><font-awesome-icon :icon="['fab', 'facebook-square']" size="2x" style="color: #3B5998;" /></span>
+                    </network>
+                    <network network="twitter">
+                      <span class="mr-3"><font-awesome-icon :icon="['fab', 'twitter-square']" size="2x" style="color: #1dcaff;" /></span>
+                    </network>
+                    <network network="linkedin">
+                      <span class="mr-3"><font-awesome-icon :icon="['fab', 'linkedin']" size="2x" style="color: #0077B5;" /></span>
+                    </network>
+                    <network network="email">
+                      <span class="mr-3"><font-awesome-icon :icon="['fas', 'envelope-square']" size="2x" style="color: #FF5252;" /></span>
+                    </network>
+                  </div>
+                </social-sharing>
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -71,7 +98,7 @@
   import XForm from "~/components/XForm";
 
   export default {
-  async asyncData({app, store, params}) {
+  async asyncData({app, store, params, req}) {
       let article = await app.$axios.get(
         `${
           store.state.wordpressAPI
@@ -82,11 +109,28 @@
 
       let image = await app.$axios.get(`${store.state.article._links['wp:featuredmedia'][0].href}`);
       store.commit("setFeaturedImage", image.data)
+
+    let host = req ? req.headers.host : window.location.protocol + '//' + window.location.href
+
+    return {
+        url: host
+    }
+
   },
   components: {
     XForm,
   },
-
+  head () {
+    return {
+      meta: [
+        { property: 'og:url', content: `${this.$nuxt.$route.fullPath}` },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: `${this.$store.state.article.title.rendered}` },
+        { property: 'og:description', content: `${this.$store.state.article.excerpt.rendered}` },
+        { property: 'og:image', content: `${this.$store.state.featuredImage.source_url}` },
+      ]
+    }
+  }
 }
 </script>
 
