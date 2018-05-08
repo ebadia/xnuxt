@@ -1,6 +1,7 @@
 # xtremis
 
 > Nuxt.js project
+
 Initial data.
 
 ## Build Setup
